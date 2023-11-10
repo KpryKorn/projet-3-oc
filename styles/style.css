@@ -1,0 +1,29 @@
+/* RESET CSS */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: center;
+}
+
+/* CLASSES GENERAL */
+
+:root {
+  --clr-primary: #9356dc;
+  --clr-secondary: #ff79da;
+  --clr-accent: #99e2d0;
+
+  --font-title: "Shrikhand", serif;
+  --font-text: "Roboto", sans-serif;
+}
