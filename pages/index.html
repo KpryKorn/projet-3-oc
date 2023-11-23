@@ -9,39 +9,23 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>OhMyFood</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-            >
-              <path
-                d="M15.8856 21.9283L15.0335 22.7417C14.6727 23.0861 14.0892 23.0861 13.7323 22.7417L6.2706 15.6229C5.9098 15.2785 5.9098 14.7215 6.2706 14.3808L13.7323 7.2583C14.0931 6.9139 14.6765 6.9139 15.0335 7.2583L15.8856 8.07167C16.2502 8.41974 16.2425 8.98763 15.8702 9.32837L11.2451 13.5345H22.2764C22.7869 13.5345 23.1976 13.9265 23.1976 14.4138V15.5862C23.1976 16.0735 22.7869 16.4655 22.2764 16.4655H11.2451L15.8702 20.6716C16.2464 21.0124 16.254 21.5803 15.8856 21.9283Z"
-                fill="#353535"
-              />
-            </svg>
-          </li>
           <li class="header__logo"><h1>OhMyFood</h1></li>
         </ul>
       </nav>
     </header>
     <main>
       <article class="hero__container">
-        <div class="hero__location">
+        <form class="hero__location">
           <span
             ><svg
               xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="17"
               viewBox="0 0 12 17"
               fill="none"
             >
@@ -51,8 +35,8 @@
               />
             </svg>
           </span>
-          <span>Paris, Belleville</span>
-        </div>
+          <input type="text" placeholder="Paris, Belleville" />
+        </form>
         <div class="hero__headings">
           <h2>Réservez le menu qui vous convient</h2>
           <p>
@@ -71,8 +55,6 @@
             <figure>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="21"
                 viewBox="0 0 14 21"
                 fill="none"
               >
@@ -89,8 +71,6 @@
             <figure>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="17"
                 viewBox="0 0 16 17"
                 fill="none"
               >
@@ -107,8 +87,6 @@
             <figure>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="19"
                 viewBox="0 0 18 19"
                 fill="none"
               >
@@ -128,18 +106,16 @@
           <figure class="section__restaurants__card" data-restau-1>
             <span>Nouveau</span>
             <figcaption>
-              <span>
+              <div>
                 <h4>La palette du goût</h4>
                 <p>Ménilmontant</p>
-              </span>
+              </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                width="22"
-                height="22"
               >
                 <path
                   stroke-linecap="round"
@@ -152,18 +128,16 @@
           <figure class="section__restaurants__card" data-restau-2>
             <span>Nouveau</span>
             <figcaption>
-              <span>
+              <div>
                 <h4>La note enchantée</h4>
                 <p>Charonne</p>
-              </span>
+              </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                width="22"
-                height="22"
               >
                 <path
                   stroke-linecap="round"
@@ -175,18 +149,16 @@
           </figure>
           <figure class="section__restaurants__card" data-restau-3>
             <figcaption>
-              <span>
+              <div>
                 <h4>À la française</h4>
                 <p>Cité Rouge</p>
-              </span>
+              </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                width="22"
-                height="22"
               >
                 <path
                   stroke-linecap="round"
@@ -198,18 +170,16 @@
           </figure>
           <figure class="section__restaurants__card" data-restau-4>
             <figcaption>
-              <span>
+              <div>
                 <h4>Le délice des sens</h4>
                 <p>Folie-Méricourt</p>
-              </span>
+              </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                width="22"
-                height="22"
               >
                 <path
                   stroke-linecap="round"
@@ -229,8 +199,6 @@
           <span
             ><svg
               xmlns="http://www.w3.org/2000/svg"
-              width="11"
-              height="13"
               viewBox="0 0 11 13"
               fill="none"
             >
@@ -244,8 +212,6 @@
           <span
             ><svg
               xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="13"
               viewBox="0 0 12 13"
               fill="none"
             >
