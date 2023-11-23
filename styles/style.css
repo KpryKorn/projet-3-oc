@@ -17,6 +17,11 @@ img {
   vertical-align: center;
 }
 
+svg {
+  width: 24px;
+  height: 24px;
+}
+
 /* CLASSES GENERAL */
 
 :root {
@@ -26,4 +31,10 @@ img {
 
   --font-title: "Shrikhand", serif;
   --font-text: "Roboto", sans-serif;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
