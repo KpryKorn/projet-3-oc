@@ -36,7 +36,43 @@ footer .fa-solid {
   color: #7e7e7e;
 }
 .icon-violet {
-  color: #9356dc;
+  color: var(--clr-primary);
+}
+
+[id="heart"],
+[id="heart2"],
+[id="heart3"],
+[id="heart4"] {
+  position: absolute;
+  left: -100vw;
+}
+[for="heart"],
+[for="heart2"],
+[for="heart3"],
+[for="heart4"] {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+[for="heart"]::selection,
+[for="heart2"]::selection,
+[for="heart3"]::selection,
+[for="heart4"]::selection {
+  color: none;
+  background: transparent;
+}
+[for="heart"]::moz-selection,
+[for="heart2"]::moz-selection,
+[for="heart3"]::moz-selection,
+[for="heart4"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+[id="heart"]:checked + label > .fa-heart,
+[id="heart2"]:checked + label > .fa-heart,
+[id="heart3"]:checked + label > .fa-heart,
+[id="heart4"]:checked + label > .fa-heart {
+  color: var(--clr-primary);
+  font-weight: 700;
 }
 
 /* CLASSES GENERAL */
