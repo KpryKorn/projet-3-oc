@@ -348,9 +348,10 @@ header .flex-row {
 
 .drawer__headings {
   font-family: var(--font-title);
-  gap: 2rem;
+  justify-content: space-between;
   align-self: flex-start;
   padding-bottom: 40px;
+  width: 95%;
 }
 
 .drawer__menu {
@@ -358,8 +359,19 @@ header .flex-row {
   flex-direction: column;
   gap: 12px;
   margin-bottom: 40px;
+  width: 100%;
 }
-
+.drawer__menu h3 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.drawer__menu-line {
+  height: 3px;
+  width: 40px;
+  margin-top: -8px;
+  background: var(--clr-accent);
+}
 .drawer__menu-item {
   padding: 15px;
   background: white;
@@ -367,7 +379,12 @@ header .flex-row {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   width: 100%;
 }
-
+.drawer__menu-item h4,
+.drawer__menu-item p:first-of-type {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /* SECTION FOOTER */
 
 footer {
