@@ -71,8 +71,42 @@ footer .fa-solid {
 [id="heart2"]:checked + label > .fa-heart,
 [id="heart3"]:checked + label > .fa-heart,
 [id="heart4"]:checked + label > .fa-heart {
-  color: var(--clr-primary);
+  background: -webkit-linear-gradient(-13deg, #9356dc -11.44%, #ff79da 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 700;
+  animation: gradient 0.3s ease-in forwards;
+}
+
+@keyframes gradient {
+  0% {
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+  }
+  50% {
+    background: -webkit-linear-gradient(
+      -13deg,
+      #9356dc -11.44%,
+      #ff79da 123.93%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    opacity: 0.5;
+  }
+  100% {
+    background: -webkit-linear-gradient(
+      -13deg,
+      #9356dc -11.44%,
+      #ff79da 123.93%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    opacity: 1;
+  }
 }
 
 /* CLASSES GENERAL */
