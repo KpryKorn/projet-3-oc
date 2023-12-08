@@ -301,6 +301,7 @@ body {
 /* HEADER */
 
 header {
+  position: relative;
   padding-block: 14px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -314,6 +315,13 @@ header h1 {
 header .flex-row {
   justify-content: center;
   align-items: center;
+}
+
+header nav ul a {
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  transform: translateY(-50%);
 }
 
 /* SECTION HERO */
