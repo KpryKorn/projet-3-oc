@@ -540,6 +540,7 @@ header .flex-row {
   background: var(--clr-accent);
 }
 .drawer__menu-item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   background: white;
@@ -550,11 +551,16 @@ header .flex-row {
   overflow: hidden;
 }
 .drawer__menu-item .flex-col {
+  padding: 15px;
+  justify-content: space-between;
+}
+.drawer__menu-item .flex-col h4,
+.drawer__menu-item .flex-col p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 15px;
-  justify-content: space-between;
+  max-width: 250px;
+  transition: max-width 0.3s ease-in-out;
 }
 .drawer__menu-item .flex-col p {
   font-weight: 300;
@@ -563,11 +569,11 @@ header .flex-row {
 }
 .drawer__menu-item .drawer-price {
   font-weight: 500;
-  align-self: end;
   padding-bottom: 15px;
-  padding-right: 15px;
-  margin-right: -165px;
-  transition: margin-right 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  transition: right 0.3s ease-in-out;
 }
 
 .drawer-coche {
@@ -587,7 +593,11 @@ header .flex-row {
   transform: translateX(0);
 }
 .drawer__menu-item:hover .drawer-price {
-  margin-right: -50px;
+  right: calc(18% + 15px);
+}
+.drawer__menu-item:hover .flex-col h4,
+.drawer__menu-item:hover .flex-col p {
+  max-width: 210px;
 }
 
 /* SECTION FOOTER */
