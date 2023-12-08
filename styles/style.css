@@ -202,6 +202,37 @@ footer .fa-solid {
     display: none;
   }
 }
+
+/* ANIMATION SLIDE IN */
+
+.drawer__menu[data-slide-in-1] {
+  animation: slideIn 0.3s ease forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.drawer__menu[data-slide-in-2] {
+  animation: slideIn 0.3s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.drawer__menu[data-slide-in-3] {
+  animation: slideIn 0.3s ease forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* CLASSES GENERAL */
 
 :root {
