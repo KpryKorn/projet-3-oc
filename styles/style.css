@@ -543,6 +543,9 @@ header .flex-row {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.drawer__menu-item p:last-of-type {
+  padding-left: 10px;
+}
 /* SECTION FOOTER */
 
 footer {
