@@ -68,7 +68,7 @@ footer .fa-solid {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
-  animation: gradient 0.3s ease-in forwards;
+  animation: gradient 0.7s ease-in forwards;
 }
 
 @keyframes gradient {
@@ -493,11 +493,12 @@ header .flex-row {
 .drawer {
   background: rgb(246, 246, 246);
   padding: 32px 20px 40px;
+  margin-top: -64px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
 }
 .drawer .cta {
   padding-inline: 48px;
