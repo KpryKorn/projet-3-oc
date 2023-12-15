@@ -632,3 +632,50 @@ footer ul li.light {
 footer ul li.flex-row {
   gap: 8px;
 }
+
+/* MEDIA QUERIES — DESKTOP */
+
+@media (min-width: 1024px) {
+  body {
+    max-width: none;
+  }
+
+  .section__fonctionnement {
+    padding: 48px 180px 68px;
+  }
+
+  .section__fonctionnement__container {
+    flex-direction: row;
+  }
+
+  .section__restaurants {
+    padding: 54px 180px 66px;
+  }
+
+  .section__restaurants__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .section__restaurants__card {
+    width: 46%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    padding: 30px 25px;
+    gap: 3rem;
+  }
+
+  footer ul {
+    flex-direction: row;
+  }
+
+  .footer__logo {
+    padding: 0;
+  }
+}
