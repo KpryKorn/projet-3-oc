@@ -561,6 +561,7 @@ header nav ul a {
   width: 100%;
   height: 70px;
   overflow: hidden;
+  cursor: pointer;
 }
 .drawer__menu-item .flex-col {
   padding: 15px;
@@ -635,6 +636,84 @@ footer ul li.light {
 }
 footer ul li.flex-row {
   gap: 8px;
+}
+
+/* MEDIA QUERIES — TABLET */
+
+@media (min-width: 768px) {
+  body {
+    max-width: none;
+  }
+
+  .section__fonctionnement {
+    padding: 48px 90px 68px;
+  }
+  .section__fonctionnement__card figure {
+    align-items: center;
+  }
+
+  .section__fonctionnement__container {
+    flex-direction: row;
+  }
+
+  .section__restaurants {
+    padding: 54px 90px 66px;
+  }
+
+  .section__restaurants__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .section__restaurants__card {
+    width: 46%;
+  }
+
+  .drawer {
+    margin-inline: auto;
+    margin-top: -32px;
+    width: 75%;
+    padding: 32px 90px 40px;
+  }
+  .drawer__headings {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .drawer__menu-item .flex-col h4,
+  .drawer__menu-item .flex-col p {
+    max-width: none;
+  }
+  .drawer__menu-item:hover .flex-col h4,
+  .drawer__menu-item:hover .flex-col p {
+    max-width: none;
+  }
+
+  .drawer-coche {
+    width: 9%;
+  }
+
+  .drawer__menu-item:hover .drawer-price {
+    right: calc(9% + 15px);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    padding: 30px 25px;
+    gap: 3rem;
+  }
+
+  footer ul {
+    flex-direction: row;
+  }
+
+  .footer__logo {
+    padding: 0;
+  }
 }
 
 /* MEDIA QUERIES — DESKTOP */
